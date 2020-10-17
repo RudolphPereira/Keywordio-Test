@@ -1,0 +1,114 @@
+.hero__left {
+  width: 68%;
+  @include ipad {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+  }
+  @include iphone {
+    width: 100%;
+  }
+}
+
+.hero__budget {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 1rem;
+  padding: 0.7rem 1.8rem;
+  background-color: #ffffff;
+  width: 85%;
+  font-size: 0.8rem;
+  @include ipad {
+    margin: auto;
+  }
+  @include iphone {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.hero__budget span {
+  margin-left: 1rem;
+  font-weight: $font-weight-semiBold;
+  color: #1a8ff0;
+  @include iphone {
+    margin-left: 0.2rem;
+  }
+}
+
+.hero__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.7rem;
+  @include iphone {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero__card {
+  width: 48%;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgb(235, 235, 235);
+  padding: 1.8rem 2rem;
+  margin-top: 0.8rem;
+  margin-left: 0.7rem;
+  border-radius: 0.2rem;
+  @include ipad {
+    margin-top: 1.5rem;
+    margin-left: 0.7rem;
+  }
+  @include iphone {
+    width: 90%;
+  }
+}
+
+.hero__card--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__card--title span {
+  font-size: 1.6rem;
+}
+
+.hero__card--title p {
+  font-size: 1.1rem;
+  font-weight: $font-weight-semiBold;
+  color: #3d4955;
+}
+
+.hero__card--result {
+  color: #1a8ff0;
+  font-size: 1.2rem;
+}
+.hero__card--analysis {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  color: #3d4955;
+  font-weight: $font-weight-medium;
+}
+
+.green span {
+  color: #15ac1a;
+  font-weight: $font-weight-semiBold;
+}
+
+.orange span {
+  color: #ff6b3d;
+  font-weight: $font-weight-semiBold;
+}
+
+.fa-smile {
+  color: #08ac44;
+}
+
+.fa-frown {
+  color: #ff6b3d;
+}
+
+.fa-meh {
+  color: #fbb03b;
+}

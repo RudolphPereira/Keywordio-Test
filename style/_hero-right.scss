@@ -1,0 +1,116 @@
+.hero__right {
+  width: 32%;
+  @include ipad {
+    width: 50%;
+    margin: auto;
+  }
+  @include iphone {
+    width: 85%;
+  }
+}
+
+.hero__dropDowns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__analytics,
+.hero__range {
+  margin: 2.5rem 0 1rem 0;
+  padding: 0.3rem 3rem 0.3rem 0.8rem;
+  appearance: none;
+  border: none;
+  box-shadow: 0px 0px 1px #c1c1c1;
+  outline: none;
+  border-radius: 0.1rem;
+  color: #3d4955;
+  font-weight: $font-weight-medium;
+  cursor: pointer;
+  @include ipad {
+    margin: 0.5rem 0;
+  }
+}
+
+.hero__dropDowns {
+  position: relative;
+}
+
+.hero__channels span,
+.hero__calender span {
+  position: absolute;
+  top: 51%;
+  color: #3d4955;
+  font-size: 0.9rem;
+  cursor: pointer;
+  @include ipad {
+    top: 33%;
+  }
+  @include iphone {
+    top: 32%;
+  }
+}
+
+.hero__calender span {
+  left: 93.5%;
+  @include ipad {
+    left: 95.5%;
+  }
+  @include iphone {
+    left: 92.5%;
+  }
+}
+
+.hero__channels span {
+  left: 30.5%;
+  @include iphone {
+    left: 36%;
+  }
+}
+
+.hero__highlights--title {
+  @include ipad {
+    text-align: center;
+  }
+}
+
+.hero__highlights--title h2 {
+  color: #3d4955;
+  font-weight: $font-weight-bold;
+  font-size: 1.2rem;
+  margin: 1.2rem 0 0.3rem 0.2rem;
+}
+
+.hero__highlights--title p {
+  color: #757575;
+  font-weight: $font-weight-regular;
+  font-size: 0.8rem;
+  margin: 0 0 0 0.2rem;
+}
+
+.hero__highlights--card {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgb(235, 235, 235);
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  padding: 0 1rem 0.9rem 1.4rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero__highlights--cardSvg li {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__highlights--cardLinks {
+  margin-bottom: 0.2rem;
+}
+
+.hero__highlights--cardLinks li {
+  color: #3d4955;
+  font-size: 0.8rem;
+  font-weight: $font-weight-medium;
+  margin: 2.5rem 0rem 1.8rem 1rem;
+}

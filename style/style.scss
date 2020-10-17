@@ -1,0 +1,36 @@
+// Global styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1500px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+}
+
+ul {
+  list-style: none;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+// The Global styles end here
+
+@import "./mixin";
+@import "./variables";
+@import "./nav";
+@import "./hero";
+@import "./hero-left";
+@import "./hero-right";
+@import "./social";

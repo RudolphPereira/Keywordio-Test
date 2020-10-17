@@ -1,0 +1,38 @@
+.hero {
+  width: 90%;
+  margin: auto;
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.hero__content--top {
+  display: flex;
+  @include ipad {
+    flex-direction: column;
+  }
+}
+
+.hero__content--bottom h2 {
+  padding: 2rem 0;
+  color: #3d4955;
+  font-weight: $font-weight-bold;
+  @include ipad {
+    text-align: center;
+  }
+}
+.hero__graph {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgb(235, 235, 235);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  @include ipad {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.hero__graph--img {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+nav {
+  // min-height: 8vh;
+  width: 100%;
+  background-color: #1a8ff0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 4rem;
+  font-size: 0.7rem;
+  @include nav {
+    flex-direction: column;
+  }
+}
+
+.nav__logo h1 {
+  font-weight: $font-weight-medium;
+  @include nav {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.nav__login h1 {
+  font-weight: $font-weight-semiBold;
+}

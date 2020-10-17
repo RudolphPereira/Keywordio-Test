@@ -1,0 +1,18 @@
+@mixin ipad {
+  @media screen and (max-width: 1320px) {
+    @content;
+  }
+}
+
+// Using higer px as few components require a faster switch
+@mixin iphone {
+  @media screen and (max-width: 880px) {
+    @content;
+  }
+}
+
+@mixin nav {
+  @media screen and (max-width: 620px) {
+    @content;
+  }
+}

@@ -1,0 +1,54 @@
+.social {
+  padding: 4rem 0 2rem;
+  @include ipad {
+    padding: 3rem 2rem;
+  }
+}
+
+.social__content {
+  display: flex;
+  width: 48%;
+  margin: auto;
+  @include ipad {
+    width: 70%;
+  }
+  @include iphone {
+    width: 100%;
+  }
+}
+
+.social__content p {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  @include iphone {
+    font-size: 0.5rem;
+  }
+}
+
+.social__facebook,
+.social__slack,
+.social__knowledgeCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.2rem;
+  padding: 0.7rem 0rem;
+  border-radius: 0.4rem;
+  border: 2px solid #3b5998;
+  color: #3b5998;
+  font-weight: $font-weight-medium;
+  @include iphone {
+    padding: 0.7rem 0.7rem;
+  }
+}
+
+.social__slack {
+  border: 2px solid #c7cacd;
+  color: #000000;
+}
+
+.social__knowledgeCenter {
+  border: 2px solid #1a8ff0;
+  color: #1a8ff0;
+}
