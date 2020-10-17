@@ -1,13 +1,18 @@
 nav {
-  // min-height: 8vh;
-  width: 100%;
+  min-width: 100%;
   background-color: #1a8ff0;
   color: #ffffff;
+}
+
+.nav__content {
+  // min-height: 8vh;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 4rem;
   font-size: 0.7rem;
+  padding: 0.8rem 0;
   @include nav {
     flex-direction: column;
   }
