@@ -31,39 +31,23 @@
   }
 }
 
-.hero__dropDowns {
+.hero__channels,
+.hero__calender {
   position: relative;
+  overflow: hidden;
 }
 
-.hero__channels span,
-.hero__calender span {
+.hero__channels::after,
+.hero__calender::after {
+  content: "\25BC";
   position: absolute;
-  top: 51%;
+  top: 58%;
+  right: 5%;
+  pointer-events: none;
   color: #3d4955;
-  font-size: 0.9rem;
-  cursor: pointer;
+  font-size: 0.6rem;
   @include ipad {
-    top: 33%;
-  }
-  @include iphone {
-    top: 32%;
-  }
-}
-
-.hero__calender span {
-  left: 93.5%;
-  @include ipad {
-    left: 95.5%;
-  }
-  @include iphone {
-    left: 92.5%;
-  }
-}
-
-.hero__channels span {
-  left: 30.5%;
-  @include iphone {
-    left: 36%;
+    top: 35%;
   }
 }
 

@@ -335,56 +335,27 @@ nav {
   }
 }
 
-.hero__dropDowns {
+.hero__channels,
+.hero__calender {
   position: relative;
+  overflow: hidden;
 }
 
-.hero__channels span,
-.hero__calender span {
+.hero__channels::after,
+.hero__calender::after {
+  content: "\25BC";
   position: absolute;
-  top: 51%;
+  top: 58%;
+  right: 5%;
+  pointer-events: none;
   color: #3d4955;
-  font-size: 0.9rem;
-  cursor: pointer;
+  font-size: 0.6rem;
 }
 
 @media screen and (max-width: 1320px) {
-  .hero__channels span,
-  .hero__calender span {
-    top: 33%;
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .hero__channels span,
-  .hero__calender span {
-    top: 32%;
-  }
-}
-
-.hero__calender span {
-  left: 93.5%;
-}
-
-@media screen and (max-width: 1320px) {
-  .hero__calender span {
-    left: 95.5%;
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .hero__calender span {
-    left: 92.5%;
-  }
-}
-
-.hero__channels span {
-  left: 30.5%;
-}
-
-@media screen and (max-width: 880px) {
-  .hero__channels span {
-    left: 36%;
+  .hero__channels::after,
+  .hero__calender::after {
+    top: 35%;
   }
 }
 
@@ -507,7 +478,7 @@ nav {
   .social__facebook,
   .social__slack,
   .social__knowledgeCenter {
-    padding: 0.7rem 0.5rem;
+    padding: 0.7rem 0.6rem;
   }
 }
 
