@@ -5,15 +5,16 @@ nav {
 }
 
 .nav__content {
-  // min-height: 8vh;
+  height: 5vh;
   width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.7rem;
-  padding: 0.8rem 0;
+  padding: 1.5rem 0;
   @include nav {
+    height: 15vh;
     flex-direction: column;
   }
 }
